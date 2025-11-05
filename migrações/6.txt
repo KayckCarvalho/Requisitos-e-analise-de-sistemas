@@ -1,0 +1,43 @@
+# 6 – Construção de cenários — Xpress (mês-base)
+
+**Premissas dos cenários**
+
+* **Pedidos/mês:** pessimista **3.200** · provável **4.000** · otimista **5.000**
+* **Take rate médio (comissão):** 17,3% · **18,2%** · 19,0%
+* **Mix de pagamento (card → Pix):** 50%/50% · **40%/60%** · 30%/70%
+* **Mensalidades Pro (R$ 149,90):** 8 · **10** · 15 lojas
+* **Anúncios/destaques (R$ 499,90):** 3 · **6** · 10 slots
+* **Custos fixos (5.11):** **R$ 29.407,00** (mantidos)
+* **Custos por pedido (5.8):** Pix **R$ 0,23** · Cartão **R$ 1,12**
+
+## Demonstrativo por cenário (R$ e % da receita)
+
+| Quadro        | Descrição                               | **Provável** (R$) |       **%** | **Pessimista** (R$) |       **%** | **Otimista** (R$) |       **%** |
+| ------------- | --------------------------------------- | ----------------: | ----------: | ------------------: | ----------: | ----------------: | ----------: |
+| 5.5           | **1. Receita total com vendas**         |     **37.258,40** | **100,00%** |       **27.610,90** | **100,00%** |     **49.997,50** | **100,00%** |
+|               | **2. Custos variáveis totais**          |                   |             |                     |             |                   |             |
+| 5.8           | (a) Custos “por pedido” (CMD/CMV)       |          2.344,00 |       6,29% |            2.160,00 |       7,82% |          2.485,00 |       4,97% |
+| 5.7 (Subt. 1) | (b) Impostos sobre vendas (DAS)**       |          2.980,67 |       8,00% |            2.208,87 |       7,99% |          3.999,80 |       8,00% |
+| 5.7 (Subt. 2) | (c) Gastos com vendas                   |          2.685,34 |       7,21% |            1.995,58 |       7,22% |          3.599,61 |       7,20% |
+|               | **Subtotal 2 (a+b+c)**                  |      **8.010,01** |  **21,50%** |        **6.364,45** |  **23,04%** |     **10.084,41** |  **20,17%** |
+|               | **3. Margem de contribuição (1–2)**     |     **29.248,39** |  **78,50%** |       **21.246,45** |  **76,96%** |     **39.913,09** |  **79,83%** |
+| 5.11          | **4. (–) Custos fixos totais**          |     **29.407,00** |  **78,93%** |       **29.407,00** | **106,50%** |     **29.407,00** |  **58,82%** |
+|               | **5. Lucro/Prejuízo operacional (3–4)** |       **–158,61** |  **–0,43%** |       **–8.160,55** | **–29,56%** |     **10.506,09** |  **21,01%** |
+
+**Observações**
+
+* DAS (Simples) estimado em **8%** da **receita Xpress** (ajuste conforme seu Anexo/faixa).
+* Taxa de entrega **não** compõe a receita Xpress (100% do entregador).
+
+---
+
+## Ações corretivas e preventivas (prontas para o quadro)
+
+* **Receita/GMV:** aumentar pedidos com campanhas locais; ampliar **anúncios/destaques** e base **Pro** (↑ take rate).
+* **Pagamento:** migrar parte do **cartão → Pix** (↓ custo variável por pedido).
+* **Operação:** manter **SLA p90 ≤ 2 min**, **ETA ≥ 85%** e **nota ≥ 4,5/5** (impacta conversão e ranking).
+* **Custos fixos:** renegociar **cloud/SaaS/marketing base**; ativar “modo enxuto” em meses de baixa.
+* **Comercial B2B:** parcerias com distribuidores/eventos; onboarding assistido para elevar conversão de lojistas.
+* **Monitoramento:** painel semanal de **MC, PE, lucro**, com gatilhos de ação (ex.: MC < 75% → revisar mix e mídia).
+
+Se quiser, eu te entrego isso em **.xlsx** com fórmulas (você altera pedidos/take rate/mix e a planilha recalcula os três cenários automaticamente).
